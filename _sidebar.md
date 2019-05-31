@@ -1,11 +1,11 @@
-- Getting started
+- 基础文档
 
-  - [Quick start](quickstart.md)
+  - [MarkDown](MarkDown.md)
   - [Writing more pages](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
 
-- Customization
+- 进阶文档
 
   - [Configuration](configuration.md)
   - [Themes](themes.md)
@@ -14,8 +14,7 @@
   - [Markdown configuration](markdown.md)
   - [Language highlighting](language-highlight.md)
 
-- Guide
-
+- 备用文档
   - [Deploy](deploy.md)
   - [Helpers](helpers.md)
   - [Vue compatibility](vue.md)
@@ -23,6 +22,3 @@
   - [Offline Mode(PWA)](pwa.md)
   - [Server-Side Rendering(SSR)](ssr.md)
   - [Embed Files](embed-files.md)
-
-- [Awesome docsify](awesome.md)
-- [Changelog](changelog.md)
