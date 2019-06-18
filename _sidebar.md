@@ -3,7 +3,8 @@
   - [MarkDown](MarkDown.md)
   - [Unity3D](Unity3D.md)
   - [UnityGUI-Old](\UnityGUI-Old.md)
-  - [Cover page](cover.md)
+  - [UnityGUI-Old](.\UnityGUI-Old.md)
+  - [UnityGUI-Old](./UnityGUI-Old.md)
 
 - 进阶文档
 
