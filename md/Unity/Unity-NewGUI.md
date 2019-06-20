@@ -22,4 +22,23 @@ The **Mesh Renderer** takes the geometry from the **Mesh Filter** and renders it
 
 ![QQ截图20190618194906.png](https://i.loli.net/2019/06/18/5d08cfc8077d560932.png)
 
-## 5.
+## 6.Image
+
+Sliced:切片
+Tiled:平铺(拼贴)
+Filled:填充
+
+![](https://docs.unity3d.com/2019.1/Documentation/uploads/Main/UI_ImageInspector.png)
+
+
+
+## 创建简单Image动画
+
++ GameObject 增加组件 Image
++ GameObject 增加组件 Animator
++ 选中 GameObject 按键 Ctrl + 6
++ 为 GameObject 创建 Clip(片段) 并保存。(这里Animator会自动绑定新建的Clip)
+
+点击红色按钮进行录制
++ 1.选择时长
++ 2.选择动作 点击GO，点击Image-Fill Amount 改为1(原本为0)
