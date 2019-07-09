@@ -9,7 +9,7 @@
     [网络游戏核心技术与实战](/md/网络游戏核心技术与实战.md)
 
 - 模块知识
-  - [csharp中使用gRPC](csharp中使用gRPC.md)
+  - [csharp中使用gRPC](/md/csharp中使用gRPC.md)
   - [Helpers](helpers.md)
   - [Vue compatibility](vue.md)
   - [CDN](cdn.md)
