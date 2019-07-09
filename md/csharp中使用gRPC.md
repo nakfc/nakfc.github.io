@@ -1,9 +1,8 @@
-#
-***
 [Hello World 示例项目地址](https://github.com/grpc/grpc/tree/master/examples/csharp/Helloworld)
 ***
 
 # helloworld.proto
+
     syntax = "proto3";
 
     option java_multiple_files = true;
@@ -28,7 +27,9 @@
     message HelloReply {
     string message = 1;
     }
+
 # Helloworld\GreeterServer\Program.cs
+
     using System;
     using System.Threading.Tasks;
     using Grpc.Core;
