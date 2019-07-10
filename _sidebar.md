@@ -9,9 +9,9 @@
     [网络游戏核心技术与实战](/md/Books/网络游戏核心技术与实战.md)
 
 - 模块知识
-  - [csharp中使用gRPC](/md/Modules/csharp中使用gRPC - 规则.md)
-  - [csharp中使用gRPC](/md/Modules/csharp中使用gRPC - 实例.md)
+  - [csharp中使用gRPC](/md/Modules/csharp中使用gRPC-规则.md)
+  - [csharp中使用gRPC](/md/Modules/csharp中使用gRPC-实例.md)
   - [MobileAdsGarage](/md/Modules/MobileAdsGarage.md)
   
 - 其他
-  - [Arnold Schwarzeneger](/md/Other/Arnold Schwarzeneger.md)
+  - [ArnoldSchwarzeneger](/md/Other/ArnoldSchwarzeneger.md)
