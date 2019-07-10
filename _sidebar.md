@@ -6,7 +6,7 @@
 
 - 读书笔记
   - [Unity-游戏设计与实现](/md/Unity/Unity-游戏设计与实现.md)
-    [网络游戏核心技术与实战](/md/books/网络游戏核心技术与实战.md)
+    [网络游戏核心技术与实战](/md/Books/网络游戏核心技术与实战.md)
 
 - 模块知识
   - [csharp中使用gRPC](/md/Modules/csharp中使用gRPC - 规则.md)
