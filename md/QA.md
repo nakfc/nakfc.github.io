@@ -1,3 +1,13 @@
+## 每日规划
+### 2019年7月17日
+* 整理 GitHub
+* 构建 00-HelloWorld-Java 并通过 Jenkins 部署CI/CD
+* 构建 00-Erlang
+
+### 2019年7月18日
+
+
+## 总规划
 Unity Learn
 1.英文原版网页
 2.中文翻译网页
@@ -45,3 +55,8 @@ F:\Qt\Qt5.8.0\Tools\QtCreator\bin这个路径
 
 Q:本地NuGet包下载的路径
 A:C:\Users\Administrator\.nuget\packages
+
+
+I:只要定义【Continuous deployment rtigger】 一旦 push 仓库，Pipelines 就直接出版本到目标 agent
+I:Builds 一旦生成，基本不用再动，前提是选择正确的 pipeline，【ASP.NET】【ASP.NET CORE】【.NET Desktop】
+I:注意 Releases 中 Agent job 的 task，要选择能正确编译构建项目的 task。例如【Build solution **\*.sln】

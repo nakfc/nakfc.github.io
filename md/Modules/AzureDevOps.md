@@ -96,3 +96,56 @@ Java-Apache/Maven/Ant
  核心:编译，代码检查，测试，部署，反馈
 
  
+
+
+## 增加 Self-hosted Windows agents
+> 为了在本地运行编译好的程序
+
+![3.png](https://i.loli.net/2019/07/17/5d2f1ae28295196186.png)
+
+### windows下运行管理员PowerShell
+
+https://dev.azure.com/409588457/Bakura/_machinegroup
+
+![QQ截图20190717200452.png](https://i.loli.net/2019/07/17/5d2f0f91e5a8412486.png)
+
+完成以后，显示一个目标主机已经上线
+
+![QQ截图20190717200722.png](https://i.loli.net/2019/07/17/5d2f0f91de87273140.png)
+
+### 查看当前 Pipelines 的管道数量，添加到 agent pool(免费版本只能增加一个)
+
+https://dev.azure.com/409588457/Bakura/_settings/buildqueue?_a=concurrentJobs
+
+![QQ截图20190717202517.png](https://i.loli.net/2019/07/17/5d2f13bacd17412865.png)
+
+### 有可能的其他流程
+
+To build and deploy windows solutions.Need one Windows agent.
+
+When setup asks for your server URL, for Azure DevOps Services, answer https://dev.azure.com/{your-organization}.
+https://dev.azure.com/409588457/Bakura
+
+When setup asks for your authentication type, choose PAT. Then paste the PAT token you created into the command prompt window.
+7zvk4oe45t6htxhnpr53sb53vbpgtg3bq555eetwazkehidmcswa
+
+Run the agent
+If you configured the agent to run interactively, to run it:
+ps
+复制
+.\run.cmd
+
+## Releases 新增流程(Self-hosted)
+
+![1.png](https://i.loli.net/2019/07/17/5d2f15a75a50d69476.png)
+
+### 为 agent job 增加一个或者多个 task(任务作业)
+> task 通常是 Build CMake npm 之类
+![2.png](https://i.loli.net/2019/07/17/5d2f15a790a7f53946.png)
+
+### 这里增加了一个任务，在 .net 中对所有 .csproj 进行构建
+
+    **/*.csproj
+
+![QQ截图20190717202933.png](https://i.loli.net/2019/07/17/5d2f14b99b0c925467.png)
+

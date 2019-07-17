@@ -13,9 +13,11 @@
   - [GoogleAdMob.md](/md/Modules/GoogleAdMob.md)
   - [AndoridStudio.md](/md/Modules/AndoridStudio.md)
   - [QT.md](/md/Modules/QT.md)
+  - [GameServer.md](/md/Modules/GameServer.md)
 
 - QA
   - [QA.md](/md/QA.md)
 
 - 其他
   - [ArnoldSchwarzeneger](/md/Other/ArnoldSchwarzeneger.md)
+  
