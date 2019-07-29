@@ -37,31 +37,132 @@
 
 
 # 脚本
-* 通过 Tag 来检测碰撞
+## 示例脚本
+		using UnityEngine;
+		using System.Collections;
+		using System.Collections.Generic;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            Destory(gameObject);
-        }
-    }
+		public class AlienSpaceship:MonoBehaviour{
+			
+			// 公共变量值显示在 Inspector (可编辑)
+			public string ShipName;
 
-* 在 Inspector 中绘制标签以及空行 **Header** & **Space**
+			// 私有变量值显示在 Inspector (无法编辑)
+			[SerializeField]
+			private string cardName;
 
-	public class Spaceship : MonoBehaviour{
-	   [Header("Spaceship Info"")]
-	   public string name;
-	   public Color color;
-	   [Space]
-	   public int missileCount;
+			void Start(){
+
+			}
+
+			void Update(){
+				
+			}
+
+		}
+
+## 组件
+// 获取对象附加的组件
+var animator = GetComponent<Animator>();
+
+## 声明周期函数
+* Awake()    会在对象被实例化后执行，只执行一次
+* Start()    会在 Awake() 之后运行，直到运行完所有 Awake() 方法后，才会调用 LateUpdate 方法
+
+* Update()   会在对象被激活后运行，每一帧
+* LateUpdate() 会在 Update() 之后运行，直到运行完所有 Update() 方法后，才会调用 LateUpdate 方法
+
+* OnEnable() 会在对象被激活后运行，只执行一次
+
+## 协程
+
+## 创建与销毁
+
+> 从预设体创建对象
+	public GameObject myPrefab;
+	void Start(){
+		var newObject = (GameObject)Instantiate(myPrefab);
+		newObject.transform.position = this.transform.position;
 	}
 
-* 在 Inspector 中显示私有变量 **SerializeField**
+> 从头创建对象  
+	var newObject = new GameObject("My new GameObject");
+	var renderer = newObject.AddComponent<SpriteRenderer>();
+	renderer.sprite = myAwesomeSprite;
 
-	[SerializeField]
-	private int magicPoints;
+> 销毁
+	Destory(this.gamObject);
 
-* 记录变量到控制台
+## 实例化
+	Destroy(this.gameObject);
 
-    Debug.Log("Message! 1 + 1 = {0}", 1+1);
+## 特性
+### RequireComponent
+
+	[RequireComponent]
+	class ClassThatRequiresAnAnimator:MonoBehaviour{
+		// 此类要求 GameObject 上关联一个 Animator
+	}
+
+### Header
+
+	public class Spaceship : Monobehaviour{
+		[Header("Spaceship Info")]
+		public string name;
+		public Color color;
+		[Space]
+		public int missileCount;
+	}
+
+### SerializeField HideInInspector
+> 控制是否在 Inspector 中显示(不改变作用域)
+
+	class Monster : MonoBehaviour{
+		// 会显示
+		public int hitPoints;
+		// 不会显示
+		private bool isAlive;
+
+		// 会显示
+		[SerializeField]
+		private int magicPoints;
+
+		// 不会显示
+		[HideInInspector]
+		public bool isHostileTpPlayer;
+	}
+
+### ExcuteInEditMode
+> 编辑模式下 Update 代码
+
+	[ExecuteInEditMode]
+	class LookAtTarget : MonoBehaviour{
+		public Transform target;
+
+		void Update(){
+			if(target != null){
+				return;
+			}
+
+			// 转动以面对目标
+			transform.LookAt(target);
+		}
+	}
+
+
+### Debug
+
+	Debug.Log("Message! 1 + 1 = {0}", 1+1);
+
+###
+* 通过 Tag 来检测碰撞  
+
+		private void OnTriggerEnter(Collider other)
+		{
+			if(other.CompareTag("Player"))
+			{
+				Destory(gameObject);
+			}
+		}
+
+
