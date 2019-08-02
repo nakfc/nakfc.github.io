@@ -5,11 +5,14 @@
 ## makefile
 * 一个名为 makefile 的文件
 * 用于自动化编译，链接工程(等同于VS2017等IDE的**生成**功能)
-* 需要被 nmake.exe 或者 make.exe 来调用并生成应用程序
+* 需要被 nmake.exe 或者 make.exe 或者 mingw32-make.exe 来调用并生成应用程序
 
-## NMake.exe
+## NMake.exe(windows)
 * 程序位置:在 Microsoft Studio 目录中检索 nmake.exe (添加到环境变量)
 * 程序使用:使用命令行工具，移动到 makefile 所在目录，执行 nmake
+
+## make(linux)
+## mingw32-make(windows)
 
 ## gcc
 被 nmake.exe 和 make.exe 通过 makefile 来调用
