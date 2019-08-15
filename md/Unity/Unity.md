@@ -66,14 +66,16 @@
 var animator = GetComponent<Animator>();
 
 ## 声明周期函数
-* Awake()    会在对象被实例化后执行，只执行一次
-* Start()    会在 Awake() 之后运行，直到运行完所有 Awake() 方法后，才会调用 LateUpdate 方法
+> 运行前调用方法(按顺序)
+* Awake()    Activity为ture。 在MonoBehavior创建后就立刻调用，只执行一次
+* OnEnable() Activity为ture，脚本enable为true。 会在对象被激活后运行，只执行一次
+* Start()    会在 Awake() 之后运行，Update()第一次执行前被调用,直到运行完所有 Awake() 方法后，才会调用 LateUpdate 方法
 
-* Update()   会在对象被激活后运行，每一帧
+* OnEnter()? 每次进入都会执行一次
+* Update()   MonoBehaviour启用时，对象被激活后运行。 每一帧运行
 * LateUpdate() 会在 Update() 之后运行，直到运行完所有 Update() 方法后，才会调用 LateUpdate 方法
 
-* OnEnable() 会在对象被激活后运行，只执行一次
-
+![QQ截图20190604211833.png](https://img-blog.csdn.net/20150819133318605?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 ## 协程
 
 ## 创建与销毁
@@ -149,6 +151,8 @@ var animator = GetComponent<Animator>();
 		}
 	}
 
+### DisallowMultipleComponent
+> 不允许多次附加此组件
 
 ### Debug
 
@@ -165,4 +169,115 @@ var animator = GetComponent<Animator>();
 			}
 		}
 
+# 资源(Asset Workflow)
+## 图像
+后缀为:BMP,TIF,TGA,JPG,PSD
+## 模型
+后缀为:**FBX**,max,blend,mb,ma,obj
+## 动画
+## 声音
+## 资源包-标准资产(Standard Assets)
+后缀为:unitypackage
+## 自带包-(Unity Package Manager's Assets)
+https://docs.unity3d.com/2019.1/Documentation/uploads/Main/PackageManagerUI-Main.png
 
+# 游戏对象(GameObjects)
+## 概述
+* 所有东西都是游戏**对象**(同时没有任何作用)
+* 游戏**对象**通过附加**组件**来实现具体的行为
+四种不同类型的GameObject：动画角色，灯光，树木和音频源
+![1](https://docs.unity3d.com/2019.1/Documentation/uploads/Main/GameObjectsExamples.jpg)
+## API  
+https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
+
+## 组件的示例(Component)
+一个空对象会包含一个默认的组件:**Transform**
+* 属性1:位置(Position)
+* 属性2:旋转(Rotation)
+* 属性3:比例(Scale)  
+![QQ截图20190815191031.png](https://i.loli.net/2019/08/15/9of6NmRcgxVCb8L.png)
+
+## 对象的示例
+一个灯光对象
+* 创建一个**对象**,命名为灯光
+* 添加组件:Light  
+![QQ截图20190815185822.png](https://i.loli.net/2019/08/15/NgL4xAOe8zFQ5Xv.png)
+
+一个立方体对象
+* 创建一个**对象**,命名为立方体
+* 添加组件:Cube
+* 添加组件:Box Collider
+* 添加组件:Mesh Renderer  
+![QQ截图20190815185950.png](https://i.loli.net/2019/08/15/8sBvVQLEHkn15pf.png)
+
+## 标签
+用于识别游戏对象的类别,可以自行增加标签，每个对象只有一个标签
+* 没有标签(Untagged)
+* 玩家(Player)
+* 敌人(Enemy)
+* 建筑(Building)   
+![QQ截图20190815193642.png](https://i.loli.net/2019/08/15/rvCc85ksh4VB3oa.png)
+
+## 静态对象(了解即可)
+将对象设置为静态来优化图像渲染
+* 场景光(Lightmapping)  
+https://docs.unity3d.com/2019.1/Documentation/Manual/StaticObjects.html
+
+# 预设体(Prefabs)
+打包好的游戏对象，有利于下列操作
+* 重复利用对象，如环境中的大量树木，NPC，发射出的子弹等
+* 通过代码初始化对象
+
+## 创建一个预设体
+将一个游戏对象拖放到Project窗口(原本的游戏对象会变成蓝色，表示已经成为一个预设体)  
+![QQ截图20190815201041.png](https://i.loli.net/2019/08/15/u36OWfGzrvE9kAY.png)
+
+## 编辑一个预设体
+在Project窗口选中一个预设体，然后再Inspector选择按钮OpenPrefab/**或者双击预设体**  
+> 所有操作会自动进行保存
+
+## 实例的重载
+当需要特殊的预设体实例，可以直接再实例上改动，被改动的组件或属性会显示蓝色  
+![QQ截图20190815202540.png](https://i.loli.net/2019/08/15/2btKDdsJPnM5oFR.png)
+
+同时，也能在Inspector中体现实例不同与预设体的地方(改动的地方)  
+* 恢复(Revert All)-点击此按钮，所有改动的地方会被**撤销,会还原预设体**
+* 应用(Apply All)-点击此按钮，所有改动的地方会被**写入到预设体**
+> 右键改动的地方，也可以进行此操作
+![QQ截图20190815202806.png](https://i.loli.net/2019/08/15/uwDUH1qnycNvZ5Y.png)
+
+## 预设体嵌套
+将一个预设体从Project窗口中拖动到Hierarchy窗口的预设体上，使其成为子预设体  
+![QQ截图20190815203655.png](https://i.loli.net/2019/08/15/j4IOidHtSrozyVB.png)
+
+## 预设体的变体
+* Project窗口右键-Create-Prefab Varient  
+![QQ截图20190815204730.png](https://i.loli.net/2019/08/15/touabzfN5SKcPhd.png)
+> 变化的数据可以保存到自身，更加可以保存到基础的预设体  
+![QQ截图20190815204916.png](https://i.loli.net/2019/08/15/knjDpO7ch4JHWZ6.png)
+
+## 解包，覆盖级别
+* 在Hierarchy窗口右键-选择UnpackPrefab
+* 覆盖到预设体/覆盖到实例
+
+## 运行时实例化预设体
+1. 创建脚本:InstantiationExample.cs
+
+	using UnityEngine;
+	public class InstantiationExample : MonoBehaviour 
+	{
+		// Reference to the Prefab. Drag a Prefab into this field in the Inspector.
+		public GameObject myPrefab;
+
+		// This script will simply instantiate the Prefab when the game starts.
+		void Start()
+		{
+			// Instantiate at position (0, 0, 0) and zero rotation.
+			Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+		}
+	}
+
+2. 创建空对象
+3. 将脚本附加到空对象
+4. 将Prefab附加到公共变量:My Prefab
+5. 运行即可观察到Prefab实例对象被成功创建
