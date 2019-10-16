@@ -1,4 +1,11 @@
 # 创建项目的注意事项
+1. 创建仓库
+2. 添加.gitignore
+3. 在仓库根目录中创建Unity项目
+4. 关闭项目，将 Assets 等文件夹全部剪切到仓库根目录
+
+
+* 文件夹名=项目名，直接更改文件夹名称即可
 * .gitignore与Asset/Library/ProjectSettings等要处于相同目录  
 ![QQ截图20191016164444.png](https://i.loli.net/2019/10/16/TKFBUyfHzrLc7mk.png)  
 * 
