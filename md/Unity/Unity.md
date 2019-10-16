@@ -1,3 +1,8 @@
+# 创建项目的注意事项
+* .gitignore与Asset/Library/ProjectSettings等要处于相同目录  
+![QQ截图20191016164444.png](https://i.loli.net/2019/10/16/TKFBUyfHzrLc7mk.png)  
+* 
+
 # 快捷键
 |功能|快捷键|
 |:---|:---:|
