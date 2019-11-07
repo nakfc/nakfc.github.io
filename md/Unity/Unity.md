@@ -302,14 +302,14 @@ https://docs.unity3d.com/2019.1/Documentation/Manual/StaticObjects.html
 ![PNG-00-模型概览1.png](https://i.loli.net/2019/08/23/qmQcznTBsZiA4dh.png)  
 ![PNG-01-fbx模型.png](https://i.loli.net/2019/08/23/gbJem8QrzlAFcu4.png)  
   
-* Mesh:网格，就是模型的骨架，通常由很多个三角形组成，通常已经整合在fbx文件里面  
+* Mesh:**网格**，就是模型的骨架，通常由很多个三角形组成，通常已经整合在fbx文件里面  
 ![PNG-02-网格Mesh.png](https://i.loli.net/2019/08/23/29j81CNRO3iSZHM.png)  
 
-* .mat Meterials:材质(又称材质球),后缀为.mat的一个独立文件，需要指定一个图片如png,psd等作为纹理(如果是别人做好的模型，一般是绑定mat材质的，如果要更改，就要更改mat材质所指向的png/psd纹理)    
+* .mat Meterials:材质(**材质球**),后缀为.mat的一个独立文件，需要指定一个图片如png,psd等作为纹理(如果是别人做好的模型，一般是绑定mat材质的，如果要更改，就要更改mat材质所指向的png/psd纹理)    
 ![PNG-03-材质球mat与材质psd.png](https://i.loli.net/2019/08/23/uVD8PMHLSEvy74B.png)  
 		 
 ### animations:动画 
-* .anim       动画片段:单个动画，例如站立，行走，攻击  
-* .controller 动画控制器:用于管理各种动画片段  
+* .anim       **动画片段**:单个动画，例如站立，行走，攻击  
+* .controller **动画控制器**:用于管理各种动画片段  
 
 ![GIF 2019-11-7 17-07-55.gif](https://i.loli.net/2019/11/07/MbFz4DBqTmAiuhJ.gif)  
