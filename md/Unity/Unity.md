@@ -298,17 +298,18 @@ https://docs.unity3d.com/2019.1/Documentation/Manual/StaticObjects.html
 ## 名词解释  
 
 ### fbx模型
+* .fbx fbx模型:源自 FilmBoX 软件，支持动画的3D模型格式(注意，如果在fbx里面改变材质的话，会导致材质球的材质也改变(实际上就是改变材质球的材质)  
 ![PNG-00-模型概览1.png](https://i.loli.net/2019/08/23/qmQcznTBsZiA4dh.png)  
 ![PNG-01-fbx模型.png](https://i.loli.net/2019/08/23/gbJem8QrzlAFcu4.png)  
-fbx:源自 FilmBoX 软件，支持动画的3D模型格式(注意，如果在fbx里面改变材质的话，会导致材质球的材质也改变(实际上就是改变材质球的材质)    
-	* Mesh:网格，就是模型的骨架，通常由很多个三角形组成，通常已经整合在fbx文件里面  
-	![PNG-02-网格Mesh.png](https://i.loli.net/2019/08/23/29j81CNRO3iSZHM.png)
-	* Meterials:材质(又称材质球),后缀为.mat的一个独立文件，需要指定一个图片如png,psd等作为纹理(如果是别人做好的模型，一般是绑定mat材质的，如果要更改，就要更改mat材质所指向的png/psd纹理)    
-	![PNG-03-材质球mat与材质psd.png](https://i.loli.net/2019/08/23/uVD8PMHLSEvy74B.png)
-		* psd:RT  
-		* png:RT 
+  
+* Mesh:网格，就是模型的骨架，通常由很多个三角形组成，通常已经整合在fbx文件里面  
+![PNG-02-网格Mesh.png](https://i.loli.net/2019/08/23/29j81CNRO3iSZHM.png)  
+
+* .mat Meterials:材质(又称材质球),后缀为.mat的一个独立文件，需要指定一个图片如png,psd等作为纹理(如果是别人做好的模型，一般是绑定mat材质的，如果要更改，就要更改mat材质所指向的png/psd纹理)    
+![PNG-03-材质球mat与材质psd.png](https://i.loli.net/2019/08/23/uVD8PMHLSEvy74B.png)  
 		 
 ### animations:动画 
+* .anim       动画片段:单个动画，例如站立，行走，攻击  
+* .controller 动画控制器:用于管理各种动画片段  
 
-fbm:不是文件格式后缀，通常是文件夹名字，表示此文件夹存放的是fbx模型的mat材质文件
-prefab:
+![GIF 2019-11-7 17-07-55.gif](https://i.loli.net/2019/11/07/MbFz4DBqTmAiuhJ.gif)  
