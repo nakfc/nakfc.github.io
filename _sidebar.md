@@ -13,7 +13,7 @@
 
 - Other
   - [ArnoldSchwarzeneger](/md/Other/ArnoldSchwarzeneger.md)
-  comment - [广州市养犬管理条例-解读.md](/md/Other/广州市养犬管理条例-解读.md)
+  - [广州市养犬管理条例-解读.md](/md/Other/广州市养犬管理条例-解读.md)
   
 - QA
   - [QA.md](/md/QA/QA.md)
