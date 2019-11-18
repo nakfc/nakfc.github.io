@@ -57,6 +57,11 @@ Q:本地NuGet包下载的路径
 A:C:\Users\Administrator\.nuget\packages
 
 
-I:只要定义【Continuous deployment rtigger】 一旦 push 仓库，Pipelines 就直接出版本到目标 agent
-I:Builds 一旦生成，基本不用再动，前提是选择正确的 pipeline，【ASP.NET】【ASP.NET CORE】【.NET Desktop】
-I:注意 Releases 中 Agent job 的 task，要选择能正确编译构建项目的 task。例如【Build solution **\*.sln】
+I:只要定义【Continuous deployment rtigger】 一旦 push 仓库，Pipelines 就直接出版本到目标 agent  
+I:Builds 一旦生成，基本不用再动，前提是选择正确的 pipeline，【ASP.NET】【ASP.NET CORE】【.NET Desktop】  
+I:注意 Releases 中 Agent job 的 task，要选择能正确编译构建项目的 task。例如【Build solution **\*.sln】  
+
+Q:无法在Bolt的FlowMachine中指定需要使用的组件（如：Text.text(set)）  
+A1:因为处于独立的Macro模式下，无法调用其他组件，需要设置为内嵌模式 Macro->Embed  
+A2:任何独立的Macro如果需要调用外部组件，则必须先在Macro的变量处设置变量并且指定外部组件，然后在Flow内部通过GetVariable来实现调用  
+![GIF 2019-11-12 19-34-48.gif](https://i.loli.net/2019/11/12/BDC5FG3R2TP1sVH.gif)  

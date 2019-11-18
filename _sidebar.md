@@ -13,7 +13,7 @@
 
 - Other
   - [ArnoldSchwarzeneger](/md/Other/ArnoldSchwarzeneger.md)
-  - [广州市养犬管理条例-解读.md](/md/Other/广州市养犬管理条例-解读.md)
+#  - [广州市养犬管理条例-解读.md](/md/Other/广州市养犬管理条例-解读.md)
   
 - QA
   - [QA.md](/md/QA/QA.md)
@@ -24,7 +24,14 @@
   - [Unity-NewGUI](/md/Unity/Unity-NewGUI.md)
 
 - Unity-Course
-  - [PlayMaker-LifeSimulator](/md/Unity-Course/PlayMaker-LifeSimulator.md)
+  - [LifeSimulator-PlayMaker](/md/Unity-Course/LifeSimulator-PlayMaker.md)
 
-- Unity-Plug
-  - [Playmaker](/md/Unity-Plug/Playmaker.md)
+- Unity-Plus
+  - [Bolt](/md/Unity-Plus/Bolt.md) 
+  - [DoozyUI](/md/Unity-Plus/DoozyUI.md)
+  - [EasyMobilePro](/md/Unity-Plus/EasyMobilePro.md)
+  - [Playmaker](/md/Unity-Plus/Playmaker.md)
+  - [UMotionPro](/md/Unity-Plus/UMotionPro.md)
+  
+  
+  
