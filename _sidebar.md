@@ -13,7 +13,12 @@
 
 - Other
   - [ArnoldSchwarzeneger](/md/Other/ArnoldSchwarzeneger.md)
-  - [广州市养犬管理条例-解读.md](/md/Other/广州市养犬管理条例-解读.md)
+  - [Linux&CPP](/md/Other/Linux&CPP.md)
+  - [make](/md/Other/make.md)
+  - [MSBuild](/md/Other/MSBuild.md)
+  - [VS2017开发Linux程序之管理已有的makefile工程](/md/Other/VS2017开发Linux程序之管理已有的makefile工程.md)
+  - [Win10启用Linux子系统](/md/Other/Win10启用Linux子系统.md)
+  - [Windows跨平台开发之Linux](/md/Other/Windows跨平台开发之Linux.md)
   
 - QA
   - [QA.md](/md/QA/QA.md)
