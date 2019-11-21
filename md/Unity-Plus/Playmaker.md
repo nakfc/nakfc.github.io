@@ -20,11 +20,19 @@
     ![GIF 2019-11-20 16-04-15.gif](https://i.loli.net/2019/11/20/qXM2Ybj1twJS46z.gif)  
 
 ## 二 视频内容摘要  
-2【All】Creating the unity project and installing playmaker
-3【All】创建基本UI如:生命值，食物值，睡眠按钮，食面包按钮（下章节预告：进行更直接的处理和操作）
-4【】通过创建一个GM并附加PlayMakerFSM组件来操作其他元素，
-5【】Sending Events to State Machines and Modifying Variables 
-4【】
+### 2 创建 Unity 项目并安装 Playmaker  
+### 3 创建基本用户界面  
+* 创建基本UI如:生命值，食物值，睡眠按钮，食面包按钮（下章节预告：进行更直接的处理和操作）  
+### 4 第一个Playmaker FSM
+* 通过创建一个GM并附加PlayMakerFSM组件来操作其他元素  
+* 为FSM增加变量  
+* 为变量勾选 Inspector 使之在组件 Inspector 中显示  
+### 5 发送事件消息到FSM并修改变量 
+* 在State处定义一个新的状态(例如:)，在Events处新增一个事件(例如:Click Button)
+* 右键状态，选择 GlobalTranstion，然后选择刚才新增的事件(此事件供外部调用触发)
+* 
+### 6 
+
 6【00:00-07:40】
 6【08:00-End】Creating State Machines for Game Items（创建Item自己的FSM替换GM的FSM，引出【全局变量】以及【自身局部增量】）
 7【00:00-04:25】建立单个具有自身FSM的Beg‘s Item后(引出Prefab来批量生成其他 Item)
@@ -54,6 +62,6 @@
     State右下角->Action Browser->Int Add  
 5.定义一个按键按下的自定义事件如:Click Button  
     GameManager->PlayMakerFSM.SendEvent->Click Button  
-6.当变量改动使之体现到UI  
+6.转换到含更新UI功能的State，使当变量改动时体现到UI  
     * 右键State-Add Global Transition->FINISHED  
     * 链接 FINISHED 到 Update UI  
