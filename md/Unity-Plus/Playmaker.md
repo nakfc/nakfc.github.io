@@ -1,4 +1,3 @@
-
 ## 一 基础概念  
 * Global Transition （深黑色背景白色字体，即过渡到某个状态）   
     * 说明：任意时候可被触发的**触发器** ，通常在外部调用  
@@ -45,53 +44,26 @@
 * **创建Panel**，右键Canvas->UI->Panel，创建一个与当前Canvas相同大小的Panel，以及增加UI->Text
 * **应用Panel**，打开GM的Playmaker的State Player Died的State，拖动Panel到GM的State，选择
 * **重开游戏按钮**，更改逻辑，设置全局事件:Global Event RestartGame，设置初始化状态:State GameSetup
-* 
-* 
-### 11 优化-为血量和食物增加可视滑块
+### 11 UI-为血量和食物增加可视滑块
+* **Slider**，增加Slider组件，移除滑块子组件
+* **绑定数据**，在开始状态增加**UI Slider Set Min Max**,在更新状态增加**UI Slider Set Value**  
+### 12 数据-创建数组存储数据
+* **增加数组**，在Prefabs中增加**Array**类型局部变量:**Requirements**,数组类型为**Game Object**。
+* **遍历数组**，增加检查状态，通过**Action:Array Get Next**,遍历数组，遍历后通过FINISHED事件退出状态
+* **元素检查**，增加状态Check Requirement，通过**Action:Get Fsm String**，获取元素信息并Debug输出
 
-
-
-### 12 
-
-
-
-### 13 
-
-
-### 14 
-
-
+### 13&14 数据-检查是否符合购买条件 
+* **条件判断**，需要列表上所有条件符合才能开始处理，否则进入**事件:Cant Process Item**，并由GM提示所有需要的条件
 
 ### 15 
 
-
-
 ### 16 
+* 使用FsmTemplate
 ### 17 
 ### 18 
 ### 19 
 ### 20 
 ### 21 
-
-6【00:00-07:40】
-6【08:00-End】Creating State Machines for Game Items（创建Item自己的FSM替换GM的FSM，引出【全局变量】以及【自身局部增量】）
-7【00:00-04:25】建立单个具有自身FSM的Beg‘s Item后(引出Prefab来批量生成其他 Item)
-7【00:00-04:25】使用Prefabs，(引出Health可以为负数的bug)
---新建项目复习1-7
-8【】    
-9【】    
-10【】
-11【】
-12【】
-13【】   
-14【】
-15【】
-16【】
-17【】
-18【】
-19【】
-20【】
-21【】   
 
 ##  三 归纳整理 按键与UI的数据同步（视频章节1-5）
 1.Playmaker定义Events如:Click Button  
