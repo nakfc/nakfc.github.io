@@ -1,3 +1,34 @@
+# Bolt Kit:First Person  
+## 项目简介 
+* 结构  
+![GIF 2019-12-11 13-03-52.gif](https://i.loli.net/2019/12/11/xsvdt9cZEa3oRD5.gif)  
+
+### Scene:GUI
+### Scene:Level01
+* 场景概览：  
+![GIF 2019-12-11 15-19-27.gif](https://i.loli.net/2019/12/11/ARXgvH9jrahFyUd.gif)  
+* Environment-无功能的环境UI集合  
+* Sun-Light组件  
+* Scene Variables-Bolt常规核心组件，用于保存场景变量  
+* **Protal**-传送门，核心游戏元素  
+    * ![GIF 2019-12-11 14-01-49.gif](https://i.loli.net/2019/12/11/xWokwLUrbZeD8KX.gif)  
+* **Player**
+    * ![GIF 2019-12-11 14-10-58.gif](https://i.loli.net/2019/12/11/KDwhUBTrilx9y3J.gif) 
+* KillFloor
+    * ![GIF 2019-12-11 14-46-17.gif](https://i.loli.net/2019/12/11/c9nefq7iDGJoWgh.gif)  
+* GuiLoader
+    * ![GIF 2019-12-11 15-08-14.gif](https://i.loli.net/2019/12/11/SgKwfQbCvjkAezt.gif)
+* Canvas-
+* EventSystem-Bolt事件系统
+    * ![GIF 2019-12-11 15-22-58.gif](https://i.loli.net/2019/12/11/pOt8vcn7m1LSgE2.gif)
+* GameManager-自定义游戏管理员
+    * ![GIF 2019-12-11 15-22-04.gif](https://i.loli.net/2019/12/11/uYv4jIqoftLHNxZ.gif)
+
+
+### Scene:Level02
+### Scene:Level03
+### Scene:Level04
+
 # 3D Game Kit
 ## Player Controller - Ellen
 ## World Building - Instance Painter
