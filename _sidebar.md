@@ -30,6 +30,7 @@
 
 - Unity-Course
   - [LifeSimulator-PlayMaker](/md/Unity-Course/LifeSimulator-PlayMaker.md)
+  - [TheExplorer-3DGameKit](/md/Unity-Course/TheExplorer-3DGameKit.md)
 
 - Unity-Plus
   - [Bolt](/md/Unity-Plus/Bolt.md) 
