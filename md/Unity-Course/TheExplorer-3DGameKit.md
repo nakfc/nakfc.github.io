@@ -73,7 +73,19 @@ The Explorer:3D Game Kit(探险者:3D游戏开发)
             * ![GIF 2019-12-17 19-25-19.gif](https://i.loli.net/2019/12/17/bOfvkh74uQNtgc2.gif)
 
 # 3D Game Kit Walkthrough
+* ProBuilder
+    * 新建预制场景 Kit Tools -> Create New Scene  
+    * 开启ProBuilder窗口 Tools -> ProBuilder -> ProBuilder Window
+    
+    * 重新绘制地表
+        * 功能图例：
+            * ![GIF 2019-12-18 10-30-07.gif](https://i.loli.net/2019/12/18/74XEk9SG6lPwjch.gif)
+    * 移除ProBuilder脚本
+        * 目的：优化性能
+        * 操作：Actions -> **Strip ALl ProBuilder Scripts In Scene**  
 
+* LOD
+    * 因应距离使用不同的模型用于显示
 
 # 3D Game Kit Reference Guide
 
