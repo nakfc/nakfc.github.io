@@ -53,7 +53,7 @@ The Explorer:3D Game Kit(探险者:3D游戏开发)
 * 功能：地形
     * 地形烘培:在更新了物品后，需要重新烘培  Plane->NavMesh->Bake
 
-* 功能：**植被编辑器-WorldBuilding**
+* 功能：**植被编辑器-InstancePainter**
     * Packages->WorldBuilding->Runtime->InstancePainter
     * 通过此插件和预制体能快速创作地形植被
     * 基本操作
@@ -73,7 +73,7 @@ The Explorer:3D Game Kit(探险者:3D游戏开发)
             * ![GIF 2019-12-17 19-25-19.gif](https://i.loli.net/2019/12/17/bOfvkh74uQNtgc2.gif)
 
 # 3D Game Kit Walkthrough
-* ProBuilder
+* ProBuilder(地表)
     * 新建预制场景 Kit Tools -> Create New Scene  
     * 开启ProBuilder窗口 Tools -> ProBuilder -> ProBuilder Window
     
@@ -84,8 +84,24 @@ The Explorer:3D Game Kit(探险者:3D游戏开发)
         * 目的：优化性能
         * 操作：Actions -> **Strip ALl ProBuilder Scripts In Scene**  
 
-* LOD
+* LOD(植被)
     * 因应距离使用不同的模型用于显示
+
+* GameObject(游戏对象)
+    * **Moving Platforms** 
+        * 
+    * **PressurePad**
+        * 概述：触发与发送 
+            0. 动画，碰撞  
+            1. 交互触发:交互开始后播放动画  
+            2. 发送触发:触发后发送激活/开启等消息(目标对象必须持有组件:Game Command Receiver)
+            3. 
+
+    * 
+
+* 脚本包:**Interactive**
+    * 发送事件:SendOnTriggerENter
+    * 接受事件:Game Command Receiver
 
 # 3D Game Kit Reference Guide
 
