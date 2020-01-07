@@ -313,3 +313,18 @@ https://docs.unity3d.com/2019.1/Documentation/Manual/StaticObjects.html
 * .controller **动画控制器**:用于管理各种动画片段  
 
 ![GIF 2019-11-7 17-07-55.gif](https://i.loli.net/2019/11/07/MbFz4DBqTmAiuhJ.gif)  
+
+### Humanoid
+* Concept:A rigged and skinned humanoid type Mesh
+	1. Modeling
+	2. Rigging
+		* The process of creating a skeleton(骨骼) of joints to control the movements of your Model.
+	3. Skinning
+		* The process of attaching(附加) the Mesh to the skeleton.
+
+
+
+
+
+
+

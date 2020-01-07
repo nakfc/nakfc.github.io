@@ -1,6 +1,6 @@
 The Explorer:3D Game Kit(探险者:3D游戏开发)
 
-# Quick Start
+# Tutorial One:Quick Start
 * 创建新场景 Kit Tools > Create New Scene
     * 会预设部分对象
 * 功能：对象简单移动
