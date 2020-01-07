@@ -1,5 +1,6 @@
+
 # 创建项目的注意事项
-* 步骤
+* 创建步骤
 	1. 创建仓库
 	2. 添加.gitignore
 	3. 在仓库根目录中创建Unity项目
@@ -38,7 +39,7 @@
 |复制对象|Ctrl+D|
 |定点捕捉|V|
 
-# 操作
+# 操作方式
 1. Alt + 左键 ： 摄像机以地面为中心旋转
 2. Alt + Ctrl + 左键 ： 摄像机平行移动
 3. 制作预设体Prefabs:从**Hierarchy**中拖动到**Project**中
@@ -46,7 +47,7 @@
 > 红色代表X轴，绿色代表Y轴，蓝色代表Z轴
 ![QQ截图20190604211833.png](https://i.loli.net/2019/06/04/5cf66fbcc351d97518.png)
 
-# 脚本
+# 脚本(Script)
 ## 示例脚本
 		using UnityEngine;
 		using System.Collections;
@@ -195,12 +196,12 @@ var animator = GetComponent<Animator>();
 ![PNG-03-材质球mat与材质psd.png](https://i.loli.net/2019/08/23/uVD8PMHLSEvy74B.png)  
 ## 动画
 ## 声音
-## 资源包-标准资产(Standard Assets)
+## 资源包-标准资产
+> Standard Assets  
 后缀为:unitypackage
-## 自带包-(Unity Package Manager's Assets)
-https://docs.unity3d.com/2019.1/Documentation/uploads/Main/PackageManagerUI-Main.png
-
-
+## 自带包
+> Unity Package Manager's Assets
+> https://docs.unity3d.com/2019.1/Documentation/uploads/Main/PackageManagerUI-Main.png
 
 # 游戏对象(GameObjects)
 ## 概述
@@ -211,14 +212,14 @@ https://docs.unity3d.com/2019.1/Documentation/uploads/Main/PackageManagerUI-Main
 ## API  
 https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 
-## 组件的示例(Component)
+## 组件
 一个空对象会包含一个默认的组件:**Transform**
 * 属性1:位置(Position)
 * 属性2:旋转(Rotation)
 * 属性3:比例(Scale)  
 ![QQ截图20190815191031.png](https://i.loli.net/2019/08/15/9of6NmRcgxVCb8L.png)
 
-## 对象的示例
+## 对象
 一个灯光对象
 * 创建一个**对象**,命名为灯光
 * 添加组件:Light  
@@ -239,7 +240,7 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 * 建筑(Building)   
 ![QQ截图20190815193642.png](https://i.loli.net/2019/08/15/rvCc85ksh4VB3oa.png)
 
-## 静态对象(了解即可)
+## 静态对象
 	将对象设置为静态来优化图像渲染
 	* 场景光(Lightmapping)  
 	https://docs.unity3d.com/2019.1/Documentation/Manual/StaticObjects.html
