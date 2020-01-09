@@ -112,15 +112,15 @@ var animator = GetComponent<Animator>();
 ## 实例化
 	Destroy(this.gameObject);
 
-## 特性
-### RequireComponent
+# 特性
+## RequireComponent
 
 	[RequireComponent]
 	class ClassThatRequiresAnAnimator:MonoBehaviour{
 		// 此类要求 GameObject 上关联一个 Animator
 	}
 
-### Header
+## Header
 
 	public class Spaceship : Monobehaviour{
 		[Header("Spaceship Info")]
@@ -130,7 +130,7 @@ var animator = GetComponent<Animator>();
 		public int missileCount;
 	}
 
-### SerializeField HideInInspector
+## SerializeField HideInInspector
 > 控制是否在 Inspector 中显示(不改变作用域)
 
 	class Monster : MonoBehaviour{
@@ -148,7 +148,11 @@ var animator = GetComponent<Animator>();
 		public bool isHostileTpPlayer;
 	}
 
-### ExcuteInEditMode
+## Serializable
+> 可序列化
+https://blog.csdn.net/qq2512667/article/details/81877380
+
+## ExcuteInEditMode
 > 编辑模式下 Update 代码
 
 	[ExecuteInEditMode]
@@ -165,21 +169,13 @@ var animator = GetComponent<Animator>();
 		}
 	}
 
-### DisallowMultipleComponent
+## DisallowMultipleComponent
 > 不允许多次附加此组件
 	[DisallowMultipleComponment]
 
-### Debug
-	Debug.Log("Message! 1 + 1 = {0}", 1+1);
 
-### 通过 Tag 来检测碰撞
-	private void OnTriggerEnter(Collider other)
-	{
-		if(other.CompareTag("Player"))
-		{
-			Destory(gameObject);
-		}
-	}
+
+
 
 # 游戏资源(Asset Workflow)
 ## 图像/纹理
@@ -301,3 +297,16 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 	3. 将脚本附加到空对象
 	4. 将Prefab附加到公共变量:myPrefab
 	5. 运行即可观察到Prefab实例对象被成功创建
+
+# 其他
+## Debug
+	Debug.Log("Message! 1 + 1 = {0}", 1+1);
+
+## 通过 Tag 来检测碰撞
+	private void OnTriggerEnter(Collider other)
+	{
+		if(other.CompareTag("Player"))
+		{
+			Destory(gameObject);
+		}
+	}
