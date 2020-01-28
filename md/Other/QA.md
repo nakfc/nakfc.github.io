@@ -1,21 +1,5 @@
-## 每日规划
-### 2019年7月17日
-* 整理 GitHub
-* 构建 00-HelloWorld-Java 并通过 Jenkins 部署CI/CD
-* 构建 00-Erlang
 
-### 2019年7月18日
-
-
-## 总规划
-Unity Learn
-1.英文原版网页
-2.中文翻译网页
-
-3.归纳整理内容
-
-4.30日期限的 Unity Learn Premium
-
+# One  
 
 5.每天一个 HelloWorld
 6.stub中肯定会提供相关的实现【父类】供访问远程实例
@@ -65,3 +49,6 @@ Q:无法在Bolt的FlowMachine中指定需要使用的组件（如：Text.text(se
 A1:因为处于独立的Macro模式下，无法调用其他组件，需要设置为内嵌模式 Macro->Embed  
 A2:任何独立的Macro如果需要调用外部组件，则必须先在Macro的变量处设置变量并且指定外部组件，然后在Flow内部通过GetVariable来实现调用  
 ![GIF 2019-11-12 19-34-48.gif](https://i.loli.net/2019/11/12/BDC5FG3R2TP1sVH.gif)  
+
+# Two
+# Three

@@ -112,7 +112,12 @@ var animator = GetComponent<Animator>();
 ## 实例化
 	Destroy(this.gameObject);
 
-# 特性
+# 流程
+## MonoBehaviour.Awake	
+	脚本载入时调用(即使未被激活)
+## 
+
+# 特性(Attribute)
 ## RequireComponent
 
 	[RequireComponent]
@@ -173,7 +178,11 @@ https://blog.csdn.net/qq2512667/article/details/81877380
 > 不允许多次附加此组件
 	[DisallowMultipleComponment]
 
+## ToolTips
+> 对属性使用，鼠标指向时显示提示
 
+## ContextMenu
+> 当附件此脚本，增加右键菜单项目
 
 
 
@@ -202,7 +211,7 @@ https://blog.csdn.net/qq2512667/article/details/81877380
 # 游戏对象(GameObjects)
 ## 概述
 > * 所有东西都是游戏**对象**(同时没有任何作用)
-> * 游戏**对象**通过附加**组件**来实现具体的行为，四种不同类型的GameObject：动画与角色，灯光，树木,音频源
+> * 游戏**对象**通过附加**组件**来实现具体的行为，四种不同类型的GameObject：动画与角色，灯光，树木,音频源  
 > ![1](https://docs.unity3d.com/2019.1/Documentation/uploads/Main/GameObjectsExamples.jpg)
 
 ## API  
@@ -246,40 +255,41 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 	* 重复利用对象，如环境中的大量树木，NPC，发射出的子弹等
 	* 通过代码初始化对象
 
-## 创建一个预设体
-	将一个游戏对象拖放到Project窗口(原本的游戏对象会变成蓝色，表示已经成为一个预设体)  
-	![QQ截图20190815201041.png](https://i.loli.net/2019/08/15/u36OWfGzrvE9kAY.png)
+## 创建一个预设体  
+将一个游戏对象拖放到Project窗口(原本的游戏对象会变成蓝色，表示已经成为一个预设体)  
+![QQ截图20190815201041.png](https://i.loli.net/2019/08/15/u36OWfGzrvE9kAY.png)
 
 ## 编辑一个预设体
 	在Project窗口选中一个预设体，然后再Inspector选择按钮OpenPrefab/**或者双击预设体**  
 	> 所有操作会自动进行保存
 
 ## 实例的重载
-	当需要特殊的预设体实例，可以直接再实例上改动，被改动的组件或属性会显示蓝色  
-	![QQ截图20190815202540.png](https://i.loli.net/2019/08/15/2btKDdsJPnM5oFR.png)
+> 当需要特殊的预设体实例，可以直接再实例上改动，被改动的组件或属性会显示蓝色  
+![QQ截图20190815202540.png](https://i.loli.net/2019/08/15/2btKDdsJPnM5oFR.png)
 
-	同时，也能在Inspector中体现实例不同与预设体的地方(改动的地方)  
-	* 恢复(Revert All)-点击此按钮，所有改动的地方会被**撤销,会还原预设体**
-	* 应用(Apply All)-点击此按钮，所有改动的地方会被**写入到预设体**
-	> 右键改动的地方，也可以进行此操作
-	![QQ截图20190815202806.png](https://i.loli.net/2019/08/15/uwDUH1qnycNvZ5Y.png)
+同时，也能在Inspector中体现实例不同与预设体的地方(改动的地方)  
+* 恢复(Revert All)-点击此按钮，所有改动的地方会被**撤销,会还原预设体**
+* 应用(Apply All)-点击此按钮，所有改动的地方会被**写入到预设体**
+> 右键改动的地方，也可以进行此操作
+![QQ截图20190815202806.png](https://i.loli.net/2019/08/15/uwDUH1qnycNvZ5Y.png)
 
 ## 预设体嵌套
 	将一个预设体从Project窗口中拖动到Hierarchy窗口的预设体上，使其成为子预设体  
 	![QQ截图20190815203655.png](https://i.loli.net/2019/08/15/j4IOidHtSrozyVB.png)
 
 ## 预设体的变体
-	* Project窗口右键-Create-Prefab Varient  
-	![QQ截图20190815204730.png](https://i.loli.net/2019/08/15/touabzfN5SKcPhd.png)
-	> 变化的数据可以保存到自身，更加可以保存到基础的预设体  
-	![QQ截图20190815204916.png](https://i.loli.net/2019/08/15/knjDpO7ch4JHWZ6.png)
+* Project窗口右键-Create-Prefab Varient  
+![QQ截图20190815204730.png](https://i.loli.net/2019/08/15/touabzfN5SKcPhd.png)
+* 变化的数据可以保存到自身，更加可以保存到基础的预设体  
+![QQ截图20190815204916.png](https://i.loli.net/2019/08/15/knjDpO7ch4JHWZ6.png)
 
 ## 解包，覆盖级别
 	* 在Hierarchy窗口右键-选择UnpackPrefab
 	* 覆盖到预设体/覆盖到实例
 
 ## 运行时实例化预设体
-	1. 创建脚本:InstantiationExample.cs
+1. 创建脚本:InstantiationExample.cs  
+
 		using UnityEngine;
 		public class InstantiationExample : MonoBehaviour 
 		{
@@ -293,16 +303,18 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 				Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 			}
 		}
-	2. 创建空对象
-	3. 将脚本附加到空对象
-	4. 将Prefab附加到公共变量:myPrefab
-	5. 运行即可观察到Prefab实例对象被成功创建
+
+2. 创建空对象
+3. 将脚本附加到空对象
+4. 将Prefab附加到公共变量:myPrefab
+5. 运行即可观察到Prefab实例对象被成功创建
 
 # 其他
 ## Debug
 	Debug.Log("Message! 1 + 1 = {0}", 1+1);
 
-## 通过 Tag 来检测碰撞
+# 参考代码
+## 通过 Tag 来检测碰撞  
 	private void OnTriggerEnter(Collider other)
 	{
 		if(other.CompareTag("Player"))
@@ -310,3 +322,11 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 			Destory(gameObject);
 		}
 	}
+
+# 未分类
+## UnityEngine.PostProcessing
+## 插件:Find Reference 2
+# 内置组件/脚本
+* Aspect Ratio Fitter
+宽高比控制脚本
+* 
