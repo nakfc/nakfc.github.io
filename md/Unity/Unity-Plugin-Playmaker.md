@@ -1,3 +1,5 @@
+# Playmaker-基础
+# Playmaker-教程
 ## 一 基础概念  
 * Global Transition （深黑色背景白色字体，即过渡到某个状态）   
     * 说明：任意时候可被触发的**触发器** ，通常在外部调用  
