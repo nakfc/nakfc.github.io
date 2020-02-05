@@ -323,10 +323,65 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 		}
 	}
 
-# 未分类
-## UnityEngine.PostProcessing
-## 插件:Find Reference 2
+
+# UnityEngine.PostProcessing
+
+
 # 内置组件/脚本
 * Aspect Ratio Fitter
 宽高比控制脚本
 * 
+
+
+# 材质与着色器
+## 3种着色器
+* 表面着色器(SurfaceShader)
+* 顶点着色器
+* 固定功能着色器
+## 表面着色器的简单使用
+* 创建Shader
+	* 在Project窗口,Create->Shader->**Surface Shader**
+* 创建Meterial
+	* 在Projcet窗口,Create->**Meterial**
+* 指定Meterial的Shader
+
+* 创建Capsule
+	* 在Hierarchy窗口，3D Object->**Capsule**
+
+* 指定Capsule使用材质
+	* 选中Capsule，在Inspector窗口中查看组件**Mesh Renderer**，赋予材质SimpleSurface
+## 表面着色器添加边缘高光
+计算边缘高光需要3个参数
+* 光照的颜色
+* 边缘的厚道
+* 摄像机指向的方向与表面指向的方向(又称为**法线**)之间的夹角
+## 其他两个着色器暂略
+
+
+# 编辑器扩展(Editor Extend)
+* 存放在任意名为Editor文件夹中的.cs文件能扩展Inspector
+## 自定义向导(Wizard)
+![QQ截图20200205140746.png](https://i.loli.net/2020/02/05/uV8gshq2zOWRvfQ.png)
+
+![QQ截图20200205141324.png](https://i.loli.net/2020/02/05/tVTL7gBzjQHiPsF.png)  
+## 自定义窗口(Window)
+![QQ截图20200205140825.png](https://i.loli.net/2020/02/05/UXG7wyJ8LF9qlTD.png)  
+
+![QQ截图20200205141338.png](https://i.loli.net/2020/02/05/Kl2SWqbd9JeVZ5R.png)  
+
+## 自定义属性(Property)
+* 代码暂略
+* 通过自定义属性，将可能出现的大量数值设置优化为固定设置
+* 避免错误的数值设置(甚至提示错误的设置)  
+
+![QQ截图20200205150017.png](https://i.loli.net/2020/02/05/x9J5pZBhLqtOeiY.png)  
+-- 改为 --   
+![QQ截图20200205143221.png](https://i.loli.net/2020/02/05/SFm98lPe4srjwYb.png)  
+
+## 自定义检查器(Inspector)
+* 完全自定义Inspector  
+![QQ截图20200205145218.png](https://i.loli.net/2020/02/05/7oS5zFLV2UexNCG.png)  
+![QQ截图20200205145247.png](https://i.loli.net/2020/02/05/grEkBnWqTR1sOAI.png)  
+-- 改为 --  
+![QQ截图20200205145259.png](https://i.loli.net/2020/02/05/u1seGUSzboZArOc.png)  
+![QQ截图20200205145233.png](https://i.loli.net/2020/02/05/u51RWnbcXmrwDJj.png)  
