@@ -113,10 +113,10 @@ var animator = GetComponent<Animator>();
 	Destroy(this.gameObject);
 
 # 流程
-## MonoBehaviour.Awake	
+## MonoBehaviour.Awake()	
 	脚本载入时调用(即使未被激活)
-## 
-
+## MonoBehaviour.Start()  
+  
 # 特性(Attribute)
 ## RequireComponent
 
@@ -309,22 +309,9 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 4. 将Prefab附加到公共变量:myPrefab
 5. 运行即可观察到Prefab实例对象被成功创建
 
-# 其他
-## Debug
-	Debug.Log("Message! 1 + 1 = {0}", 1+1);
-
-# 参考代码
-## 通过 Tag 来检测碰撞  
-	private void OnTriggerEnter(Collider other)
-	{
-		if(other.CompareTag("Player"))
-		{
-			Destory(gameObject);
-		}
-	}
 
 
-# UnityEngine.PostProcessing
+# 后期处理 UnityEngine.PostProcessing
 
 
 # 内置组件/脚本
@@ -385,3 +372,21 @@ https://docs.unity3d.com/2019.1/Documentation/ScriptReference/GameObject.html
 -- 改为 --  
 ![QQ截图20200205145259.png](https://i.loli.net/2020/02/05/u1seGUSzboZArOc.png)  
 ![QQ截图20200205145233.png](https://i.loli.net/2020/02/05/u51RWnbcXmrwDJj.png)  
+
+
+# 其他
+## Debug
+	Debug.Log("Message! 1 + 1 = {0}", 1+1);
+
+# 参考代码
+## 通过 Tag 来检测碰撞  
+	private void OnTriggerEnter(Collider other)
+	{
+		if(other.CompareTag("Player"))
+		{
+			Destory(gameObject);
+		}
+	}
+
+# 测试
+![1](/misc/123.png)
