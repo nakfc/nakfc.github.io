@@ -38,11 +38,11 @@
 ![QQ截图20200214164950.png](https://i.loli.net/2020/02/14/lgQtbkws8PVBWi7.png)
 
 ## UMotion
-### 任意模型动画编辑器
+### 1.任意模型动画编辑器
 * 商店:https://assetstore.unity.com/packages/tools/animation/umotion-pro-animation-editor-95991  
 * 手册:file:///D:/00.UnityProject/2019.3.0f6-Temp/Assets/UMotionEditor/Manual/pages/GettingStarted.html  
 
-### 动画片段创建-Humonoid
+### 2.动画片段创建-Humonoid
 * 创建模型对应的动画类型项目 
     * Clip Editor->File->NewProject->Humonoid
 * 选取模型到Pose Editor  
@@ -57,3 +57,24 @@
     * 在 Tool 选择 Move
 * 保存
 * file:///D:/00.UnityProject/2019.3.0f6-Temp/Assets/UMotionEditor/Manual/pages/QuickStart.html
+
+## Inspector增强插件-2个
+### Odin Inspector
+### Power Inspector
+* 文档  
+:https://docs.sisus.co/power-inspector/features/back-and-forward-buttons/
+* 功能-1:历史导航  
+![](https://docs.sisus.co/wp-content/uploads/2019/04/BackAndForwardButtonShowcase.gif)
+* 功能-2:调试模式
+效果:用于**测试**方法/函数的效果
+![](https://docs.sisus.co/wp-content/uploads/2019/04/using-debug-mode-plus.gif)
+* 功能-3:多重编辑  
+![](https://docs.sisus.co/power-inspector/wp-content/uploads/2019/05/merged-multi-editing-mode.png)  
+* 功能-4:分隔视图  
+操作:在Hierachy**中键**游戏对象  
+效果:新增目标对象的Inspector并**锁定在最下方**  
+* 功能-5:数值复制  
+操作:**右键标签**即可选择相关操作  
+* 功能-6:随机化  
+操作:右键带数值设置的标签，**选择Randomize**  
+![](https://docs.sisus.co/wp-content/uploads/2019/10/randomize-inspector-value.gif)  
