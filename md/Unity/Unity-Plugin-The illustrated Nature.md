@@ -12,4 +12,3 @@ To enjoy the beautiful look of the scenes and avoid any missing script warnings,
 2. Import **Post-Processing** package from Package Manager.
 3. Import **The Illustrated Nature** asset.
 
-## 
