@@ -95,7 +95,9 @@ https://www.cnblogs.com/qyf404/p/5019631.html
 
 例子
 
-```c-sharp
+## C#
+
+```c#
 using System;
 namespace Mono.Cecil {
 
@@ -107,4 +109,11 @@ namespace Mono.Cecil {
   }
   }
 }
+```
+
+# Python
+
+```Python
+#!/usr/bin/python
+print("Hello, World!")
 ```
