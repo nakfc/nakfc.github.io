@@ -88,3 +88,23 @@
 </tr>
 </table>
 </details>
+
+
+# 代码块支持
+https://www.cnblogs.com/qyf404/p/5019631.html
+
+例子
+
+```c-sharp
+using System;
+namespace Mono.Cecil {
+
+  public sealed class PinnedType : TypeSpecification {
+
+  public override bool IsValueType {
+    get { return false; }
+    set { throw new InvalidOperationException (); }
+  }
+  }
+}
+```
