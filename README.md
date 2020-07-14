@@ -1,7 +1,6 @@
+[TOC]
 # 文档库
 请在侧边栏选择你要查阅的文档
-
-
 
 # 技术
 本页面使用 [jekyllrb](https://jekyllrb.com/) 搭建

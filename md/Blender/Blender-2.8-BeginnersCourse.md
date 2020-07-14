@@ -1,4 +1,7 @@
 # 1.Welcome to the Course
+
+[TOC]
+
 # 2.Interface & Navigation(界面与导航)
 ## 默认界面
 > 默认界面有标题栏和4个视图窗口(鼠标指向标题栏可以滚动)  
